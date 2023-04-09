@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_bxGG0WgOKDejZvER2fTq2xZZjfUs8zs",
-  authDomain: "restaurantapp-c2ed6.firebaseapp.com",
-  databaseURL: "https://restaurantapp-c2ed6-default-rtdb.firebaseio.com",
-  projectId: "restaurantapp-c2ed6",
-  storageBucket: "restaurantapp-c2ed6.appspot.com",
-  messagingSenderId: "174416156605",
-  appId: "1:174416156605:web:2ec169ea4ef3e7bb25e4d4",
+  apiKey: "AIzaSyBrMyBeFice1XfIG_x51whI1y5UJMHFibc",
+  authDomain: "ticket-resale-app-c43ef.firebaseapp.com",
+  databaseURL: "https://ticket-resale-app-c43ef-default-rtdb.firebaseio.com",
+  projectId: "ticket-resale-app-c43ef",
+  storageBucket: "ticket-resale-app-c43ef.appspot.com",
+  messagingSenderId: "795131025325",
+  appId: "1:795131025325:web:251aa63a05de8e67d13324",
 };
 
 const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
