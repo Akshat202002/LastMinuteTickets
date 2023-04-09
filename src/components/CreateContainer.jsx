@@ -23,7 +23,7 @@ import { useStateValue } from "../context/StateProvider";
 
 const CreateContainer = () => {
   const [title, setTitle] = useState("");
-  const [calories, setCalories] = useState("");
+  const [seatNumber, setCalories] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState(null);
   const [imageAsset, setImageAsset] = useState(null);
@@ -88,7 +88,7 @@ const CreateContainer = () => {
   const saveDetails = () => {
     setIsLoading(true);
     try {
-      if (!title || !calories || !imageAsset || !price || !category) {
+      if (!title || !seatNumber || !imageAsset || !price || !category) {
         setFields(true);
         setMsg("Required fields can't be empty");
         setAlertStatus("danger");
@@ -102,7 +102,7 @@ const CreateContainer = () => {
           title: title,
           imageURL: imageAsset,
           category: category,
-          calories: calories,
+          seatNumber: seatNumber,
           qty: 1,
           price: price,
         };
@@ -249,9 +249,9 @@ const CreateContainer = () => {
             <input
               type="text"
               required
-              value={calories}
-              placeholder="Calories"
+              value={seatNumber}
               onChange={(e) => setCalories(e.target.value)}
+              placeholder="seatNumber"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>
